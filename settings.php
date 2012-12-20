@@ -22,7 +22,8 @@ require_once('autoload.php');
 
 require_once('config.'.env.'.php');
 
-$DAL = new DAL($mysqlUsername, $mysqlPassword, $hostname, $database, null);
+$Logger = new Logger();
+$Mysql = new Mysql($mysqlUsername, $mysqlPassword, $hostname, $database, $Logger);
 
 
 ?>

@@ -37,6 +37,13 @@ if( this_conditon && that_condition )
 }
 ```
 
+**If it is a control structure without _any_ nesting, this is acceptable:**
+```php
+if( this_conditon && that_condition )
+	echo "no_nest\n";
+```
+
+
 **Good ternary operators:**
 ```php
 echo (true?true:false);
@@ -46,3 +53,13 @@ echo (true?true:false);
 ```php
 (true?'true':false?'t':'f');
 ```
+
+**Arrays: Arrays are to use text keys whenever semantic differences between values exist. Otherwise, use numeric keys.**
+```php
+$MaleNames = array('Bob','John','Tom');
+
+$UserPass = array('username' => $username, 'password' => $password);
+```
+
+**Application Specific Details**
+MySQL: PDO is used for all connections via the mysql class. All statements containing variables are to be prepared then executed. Always returns an associate array on SELECT.
