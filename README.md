@@ -2,6 +2,8 @@
 You will notice the config files are missing from the repository (with the exception of an example to be created a later date).
 This is due to the fact they contain the database credentials.
 
+Please rename example.config.dev.php to config.dev.php and fill it out if you use this project.
+
 **PersonalCodeSite - A simple blogging tool for a personal website that mixes social media & github & a blog.**
 Copyright (C) 2012 Mirk Daemon [ https://github.com/mirk-daemon ]
 

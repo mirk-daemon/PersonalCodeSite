@@ -8,6 +8,7 @@ define('app_root', '/var/www/mirkdaemon.com/'); # always end this with a slash, 
 if(dev)
 	echo '<!-- config loaded -->';
 
+# Put your login details here.
 $mysqlUsername = '';
 $mysqlPassword = '';
 $hostname = '';
